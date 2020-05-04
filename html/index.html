@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How to Cook Delicious Rice</title>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+  <div id="default">
+    <h1>Select a type of Rice</h1>
+    <button type="button" id = "white" >White Rice</button>
+    <button type="button" id = "California">Sprouted California Rice</button>
+  </div>
+<!--
+This is the text for the white rice recipe which is hidden inside of a div using attribute hidden and will display when the user selects the white rice button
+-->
+  <div id = "whiteRecipe" hidden>
+    <h2>Making White Rice</h2>
+    <br>
+    <p>Combine
+    <input id="crice" type="number" oninput="storeRice()" value="0">
+    ounce(s) of rice with
+    <input id = 'water' type = 'number' value = '0' disabled>
+    ounce(s) of water and
+    <input id = 'oil' type = 'number' value = '0' disabled>
+    Tbsp(s) olive oil. Bring to a boil, then reduce heat to the lowest setting. Cook for about 18 minutes.</p>
+  </div>
+<!--
+This is the text for the california rice recipe which is hidden inside of a div using attribute hidden and will display when the user selects the california rice button
+-->
+  <div id = "californiaRecipe" hidden>
+    <h2>Making Sprouted California Rice</h2>
+    <br><p>Combine
+    <input id = 'crice' type = 'number' oninput = 'storeRice()' value = '0'>;
+    ounce(s) of rice with
+    <input id = 'water' type = 'number' value = '0' disabled>
+     ounce(s) of water or broth and
+    <input id = 'oil' type = 'number' value = '0' disabled>
+    Tbsp(s) olive oil.Bring to a boil
+    and stir once to mix.
+    Reduce heat to low, cover with a tight-fitting lid and cook for 25 minutes.
+    Remove from heat and let stand for 5 minutes.
+    Fluff with a fork and serve.
+    For softer rice: Increase liquid by 4
+    ounces and cook time by 5 minutes.</p>
+  </div>
+<script src="../js/app.js"></script>
+</body>
+</html>
